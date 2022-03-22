@@ -23,8 +23,12 @@
 	</bean>
 	<bean id="myCricketCoach" class="com.spring.coach.CricketCoach">
 
-		<!-- set up setter injection -->
-		<property name="fortuneService" ref="myFortuneService" />
+		 <!-- set up setter injection -->
+        <property name="fortuneService" ref="myFortuneService" />
+
+        <!-- inject literal values -->
+        <property name="emailAddress" value="coach@gmail.com" />
+        <property name="team" value="TheBestTeam" />
 
 	</bean>
 </beans>
