@@ -12,11 +12,11 @@
     
     <!-- define the dependency -->
     <bean id="myFortuneService"
-    		class="com.luv2code.springdemo.HappyFortuneService">
+    		class="com.spring.coach.HappyFortuneService">
     	</bean>
     
  	<bean id="myCoach"
- 		class="com.luv2code.springdemo.TrackCoach">	
+ 		class="com.spring.coach.TrackCoach">	
  		
  		<!-- set up constructor injection -->
  		<constructor-arg ref="myFortuneService" />
