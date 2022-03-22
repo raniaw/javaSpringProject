@@ -9,7 +9,6 @@
 
 	
     <!-- Define your beans here -->
-    
     <!-- define the dependency -->
     <bean id="myFortuneService"
     		class="com.spring.coach.HappyFortuneService">
