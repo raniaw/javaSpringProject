@@ -18,6 +18,9 @@
 	<bean id="myFortuneService"
 		class="com.spring.coach.HappyFortuneService">
 	</bean>
+	<bean id="myRandomFortuneService"
+		class="com.spring.coach.RandomFortuneService">
+	</bean>
 
 	<bean id="myCoach" class="com.spring.coach.TrackCoach">
 
@@ -34,4 +37,11 @@
 		<property name="team" value="${foo.team}" />
 
 	</bean>
+	    
+ 	<bean id="myGolfCoach"
+ 		class="com.spring.coach.GolfCoach">	 
+ 		
+ 		<!-- set up constructor injection -->
+ 		<constructor-arg ref="myRandomFortuneService" />
+ 	</bean>
 </beans>
